@@ -1,0 +1,14 @@
+@use "../../styles/definitions" as *;
+
+.display {
+  @include square(auto);
+  @include rounded(gray);
+  position: relative;
+  display: block;
+
+  background-color: $display-bg-color;
+  grid-column: span 4;
+
+  text-align: right;
+  padding-right: 10%;
+}

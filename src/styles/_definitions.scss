@@ -1,0 +1,51 @@
+$button-size: 6vh;
+$font-size-button: 5vh;
+$font-size-default: 4vh;
+
+$bg-color: darkgray;
+$display-bg-color: black;
+
+$gap-size: 5px;
+
+@mixin rectangle($a, $b) {
+  width: $a;
+  height: $b;
+}
+
+@mixin square($a: $button-size) {
+  @include rectangle($a, $a)
+}
+
+@mixin fit-content {
+  width: fit-content;
+  height: fit-content;
+}
+
+@mixin font-stack($font-size: $font-size-default, $font-color: white) {
+  color: $font-color;
+  font-size: $font-size;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+@mixin grid-equal-gaps {
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+@mixin rounded($color: gray) {
+  border: solid 2px gray;
+  border-radius: 12px;
+}
+
+@mixin button-hover-animation($color, $box-color) {
+  &:hover {
+    background-color: $color;
+    box-shadow: 2px 2px 2px 1px $box-color;
+  }
+}
+
+@mixin button-after-click-effect($color) {
+  &:focus {
+    background-color: darken($color, 10);
+  }
+}

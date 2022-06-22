@@ -1,0 +1,11 @@
+@use "../../styles/definitions" as *;
+
+.button {
+  @include square;
+  @include button-hover-animation(darken(gray, 2), rgba(0, 0, 255, .5));
+
+  position: relative;
+  display: block;
+  border-radius: 12px;
+  padding: 10%;
+}

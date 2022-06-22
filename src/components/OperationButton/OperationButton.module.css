@@ -1,0 +1,18 @@
+.button {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: block;
+  background-color: darkgoldenrod;
+  border-radius: 12px;
+  padding: 10%;
+}
+.button:hover {
+  background-color: #e8a90e;
+  box-shadow: 2px 2px 2px 1px rgba(255, 0, 0, 0.5);
+}
+.button:focus {
+  background-color: #ff8da1;
+}
+
+/*# sourceMappingURL=OperationButton.module.css.map */

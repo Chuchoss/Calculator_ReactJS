@@ -1,0 +1,14 @@
+.display {
+  width: auto;
+  height: auto;
+  border: solid 2px gray;
+  border-radius: 12px;
+  position: relative;
+  display: block;
+  background-color: black;
+  grid-column: span 4;
+  text-align: right;
+  padding-right: 10%;
+}
+
+/*# sourceMappingURL=Display.module.css.map */

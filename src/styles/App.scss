@@ -1,0 +1,27 @@
+@use "definitions" as *;
+
+#root {
+  width: fit-content;
+  height: fit-content;
+
+  margin: 15% auto auto;
+  text-align: center;
+}
+
+.container {
+  @include rounded;
+  @include fit-content;
+  @include grid-equal-gaps;
+  @include font-stack;
+
+  display: grid;
+  grid-template-columns: repeat(4, $button-size);
+  grid-auto-rows: auto;
+
+  padding: 10px;
+  background-color: $bg-color;
+
+  button {
+    @include font-stack($font-color: black)
+  }
+}

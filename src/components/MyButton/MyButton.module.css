@@ -1,0 +1,14 @@
+.button {
+  width: 6vh;
+  height: 6vh;
+  position: relative;
+  display: block;
+  border-radius: 12px;
+  padding: 10%;
+}
+.button:hover {
+  background-color: #7b7b7b;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, 0.5);
+}
+
+/*# sourceMappingURL=MyButton.module.css.map */

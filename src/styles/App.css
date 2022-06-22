@@ -1,0 +1,30 @@
+#root {
+  width: fit-content;
+  height: fit-content;
+  margin: 15% auto auto;
+  text-align: center;
+}
+
+.container {
+  border: solid 2px gray;
+  border-radius: 12px;
+  width: fit-content;
+  height: fit-content;
+  column-gap: 5px;
+  row-gap: 5px;
+  color: white;
+  font-size: 4vh;
+  font-family: "Times New Roman", Times, serif;
+  display: grid;
+  grid-template-columns: repeat(4, 6vh);
+  grid-auto-rows: auto;
+  padding: 10px;
+  background-color: darkgray;
+}
+.container button {
+  color: black;
+  font-size: 4vh;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*# sourceMappingURL=App.css.map */
